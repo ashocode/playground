@@ -32,7 +32,6 @@ function solve (args){
         }
         arr = newArr;
     }
-    //console.log(newArr);
     var sumOfAll = newArr.reduce((a,b) => a + b, 0);
     console.log(sumOfAll);
 }
