@@ -14,7 +14,7 @@ function solve(params){
         rookPath = [],
         bishopPath = []; 
         
-        function createDesk (){
+        var createDesk = function(){
             for (i = 2; i < (rows + 2); i += 1){
                 arr[i - 2] = params[i].split('');
             }
@@ -22,7 +22,7 @@ function solve(params){
         }
         createDesk();
 
-        function getMoves (){
+        var getMoves = function(){
             for (j = (rows + 3); j < params.length; j += 1){
                 moves[j - (rows + 3)] = params[j].split(' ');
             }
